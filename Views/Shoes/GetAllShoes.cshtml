@@ -1,0 +1,56 @@
+﻿@using SportShop_App.Models;
+
+<link href="@Url.Content("~/Content/Shoes.css")" rel="stylesheet" type="text/css" />
+
+<div class="optionsBtn">
+
+<button onclick="location.href='@Url.Action("GetAllShoes","Shoes")'">All Shoes</button>
+<button onclick="location.href='@Url.Action("GetShoesOnSale","Shoes")'">on sale Shoes</button>
+<button onclick="location.href='@Url.Action("GetShoesTable","Shoes")'">Manager Table</button>
+
+</div>
+
+
+
+<div class="cardContainer">
+
+    @foreach (Shoe shoe in Model)
+    {
+        <div class="cards">
+            <img src="@shoe.Picture" class="shoeImage" />
+            <h4><b>@shoe.Company</b></h4>
+            <p>@shoe.Brand</p>
+            <p>@shoe.Price$</p>
+
+        </div>
+    }
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

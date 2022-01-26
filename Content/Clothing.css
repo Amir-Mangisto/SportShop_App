@@ -1,0 +1,84 @@
+﻿
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+h1 {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+table {
+    background-color: silver;
+    margin-top: 5vh;
+    margin: auto;
+    max-width: 80vw;
+    text-align: center;
+    border-collapse: collapse;
+    border: 6px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    color: black;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+th {
+    color: black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 20px 20px;
+}
+
+tr {
+    text-align: center;
+    height: 5vh;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+td {
+    padding: 20px;
+}
+
+.optionsBtn button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cardContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.5s;
+    width: 29%;
+    padding:2%;
+    margin:3%;
+    text-align:center;
+
+}
+
+.clothImage{
+    width:300px;
+}
+.cards:hover {
+    box-shadow: 0 12px 20px 0 rgb(128, 128, 128);
+}
+
+

@@ -1,0 +1,30 @@
+﻿
+<link href="@Url.Content("~/Content/Clothing.css")" rel="stylesheet" type="text/css" />
+
+<div class="optionsBtn">
+
+    <button onclick="location.href='@Url.Action("GetLongShirts","Clothing")'">long shirts</button>
+    <button onclick="location.href='@Url.Action("GetShortShirts","Clothing")'">short shirts</button>
+    <button onclick="location.href='@Url.Action("GetDryfitShirts","Clothing")'">dryfit shirts</button>
+    <button onclick="location.href='@Url.Action("GetClothingTable","Clothing")'">manager table</button>
+    <button onclick="location.href='@Url.Action("OrderByPrice","Clothing")'">Sorted By Price</button>
+
+</div>
+
+<h1>Shirts:</h1>
+
+
+<div class="cardContainer">
+
+    @foreach (var cloth in Model)
+    {
+        <div class="cards">
+            <img src="@cloth.Picture" class="clothImage" />
+            <h4><b>@cloth.Company</b></h4>
+            <p>@cloth.Brand</p>
+            <p>@cloth.Price$</p>
+        </div>
+    }
+</div>
+
+

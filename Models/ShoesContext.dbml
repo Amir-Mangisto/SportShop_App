@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SportShopDB" Class="ShoesContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=SportShopDB;Integrated Security=True;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SportShopDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Shoes" Member="Shoes">
+    <Type Name="Shoe">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ShoeType" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OnSale" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clothing" Member="Clothings">
+    <Type Name="Clothing">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TypeOfCloths" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsShort" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDryfit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TeamId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Team_Clothing" Member="Team" ThisKey="TeamId" OtherKey="Id" Type="Team" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Teams" Member="Teams">
+    <Type Name="Team">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TeamName" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Team_Clothing" Member="Clothings" ThisKey="Id" OtherKey="TeamId" Type="Clothing" />
+    </Type>
+  </Table>
+</Database>

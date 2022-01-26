@@ -1,0 +1,44 @@
+﻿
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.optionsBtn button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.5s;
+    width: 29%;
+    padding: 2%;
+    margin: 3%;
+    text-align: center;
+    width:40%;
+}
+
+.shoeImage {
+    width: 300px;
+    align-content:center;
+}
+
+.cards:hover {
+    box-shadow: 0 12px 20px 0 rgb(128, 128, 128);
+}
+

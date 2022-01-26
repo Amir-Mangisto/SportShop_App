@@ -1,0 +1,44 @@
+﻿
+<link href="@Url.Content("~/Content/Clothing.css")" rel="stylesheet" type="text/css" />
+
+
+
+<h1>CLOTHING TABLE:</h1>
+<table>
+    <tr>
+
+        <th>ID</th>
+        <th>TypeOfCloths</th>
+        <th>Gender</th>
+        <th>Company</th>
+        <th>Brand</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>IsShort</th>
+        <th>IsDryfit</th>
+        <th>Picture</th>
+        <th>TeamId</th>
+
+
+    </tr>
+    @foreach (var clothing in Model)
+    {
+        <tr>
+            <td>@clothing.Id</td>
+            <td>@clothing.TypeOfCloths</td>
+            <td>@clothing.Gender</td>
+            <td>@clothing.Company</td>
+            <td>@clothing.Brand</td>
+            <td>@clothing.Price</td>
+            <td>@clothing.Quantity</td>
+            <td>@clothing.IsShort</td>
+            <td>@clothing.IsDryfit</td>
+            <td>@clothing.Picture</td>
+            <td>@clothing.TeamId</td>
+
+
+
+        </tr>
+    }
+
+</table>

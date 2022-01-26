@@ -1,0 +1,17 @@
+﻿<link href="@Url.Content("~/Content/Clothing.css")" rel="stylesheet" type="text/css" />
+
+<h1>Dryfit pants:</h1>
+
+<div class="cardContainer">
+
+    @foreach (var cloth in Model)
+    {
+        <div class="cards">
+            <img src="@cloth.Picture" class="clothImage" />
+            <h4><b>@cloth.Company</b></h4>
+            <p>@cloth.Brand</p>
+            <p>@cloth.Price$</p>
+        </div>
+    }
+</div>
+

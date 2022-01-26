@@ -1,0 +1,27 @@
+﻿@using SportShop_App.Models;
+
+<link href="@Url.Content("~/Content/Shoes.css")" rel="stylesheet" type="text/css" />
+
+
+<img src="https://i.pinimg.com/600x315/83/10/27/8310272150b3f68855075c08319b5fde.jpg" style="width:100%; height:40vh;" />
+
+<br />
+<br />
+<br />
+<h1><b>On Sale Shoes</b></h1>
+<br />
+<br />
+
+<div class="cardContainer">
+
+    @foreach (Shoe shoe in Model)
+    {
+        <div class="cards">
+            <img src="@shoe.Picture" class="shoeImage" />
+            <h4><b>@shoe.Company</b></h4>
+            <p>@shoe.Brand</p>
+            <p>@shoe.Price$</p>
+        </div>
+    }
+</div>
+

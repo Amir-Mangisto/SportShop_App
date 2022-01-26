@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ShoesContext">
+  <DataContextMoniker Name="/ShoesContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7eb8603b-2b6c-49cc-a105-0b17f46df1fc" absoluteBounds="1.125, 5.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/ShoesContextDataContext/Shoe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f9675ef-7116-4d22-9cef-56121f8e594b" absoluteBounds="1.1400000000000001, 5.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8cedc236-102f-4213-be33-57beb0f25570" absoluteBounds="0.875, 1, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/ShoesContextDataContext/Clothing" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6028a387-3eb6-4cfd-9c2f-97f895241d7b" absoluteBounds="0.89, 1.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="353920b9-3403-4755-aaec-a8f9755a8d81" absoluteBounds="5, 1.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/ShoesContextDataContext/Team" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb51fbd2-c385-47a2-98f8-90fbb135809c" absoluteBounds="5.015, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5 : 1.97199625651042); (2.875 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShoesContextDataContext/Team/Team_Clothing" />
+      <nodes>
+        <classShapeMoniker Id="353920b9-3403-4755-aaec-a8f9755a8d81" />
+        <classShapeMoniker Id="8cedc236-102f-4213-be33-57beb0f25570" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

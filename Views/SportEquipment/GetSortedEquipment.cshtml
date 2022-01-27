@@ -1,0 +1,18 @@
+﻿<link href="@Url.Content("~/Content/Clothing.css")" rel="stylesheet" type="text/css" />
+
+<h1>Sorted By Price Equipment:</h1>
+
+<div class="cardContainer">
+
+    @foreach (var equipment in Model)
+    {
+        <div class="cards">
+            <img src="@equipment.Picture" class="clothImage" />
+            <h4><b>@equipment.ProductName</b></h4>
+            <p>@equipment.Company</p>
+            <p>@equipment.Price$</p>
+        </div>
+    }
+</div>
+
+

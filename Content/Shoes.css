@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
 .optionsBtn {
     margin-left: 4vw;
 }
@@ -19,7 +22,10 @@
     cursor: pointer;
     border-radius: 5px;
 }
-
+h1 {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+}
 .cardContainer {
     display: flex;
     flex-wrap: wrap;

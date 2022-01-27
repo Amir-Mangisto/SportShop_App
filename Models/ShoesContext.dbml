@@ -33,6 +33,20 @@
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="TeamName" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Association Name="Team_Clothing" Member="Clothings" ThisKey="Id" OtherKey="TeamId" Type="Clothing" />
+      <Association Name="Team_SportEQ" Member="SportEQs" ThisKey="Id" OtherKey="TeamId" Type="SportEQ" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SportEQ" Member="SportEQs">
+    <Type Name="SportEQ">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SportType" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ProductName" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeamId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Team_SportEQ" Member="Team" ThisKey="TeamId" OtherKey="Id" Type="Team" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

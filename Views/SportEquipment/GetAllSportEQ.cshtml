@@ -1,0 +1,27 @@
+﻿<link href="@Url.Content("~/Content/Clothing.css")" rel="stylesheet" type="text/css" />
+
+<div class="optionsBtn">
+
+<button onclick="location.href='@Url.Action("GetAllSportEQ","SportEquipment")'">All Sport EQ</button>
+<button onclick="location.href='@Url.Action("GetManagerTable","SportEquipment")'">Manager Table</button>
+<button onclick="location.href='@Url.Action("GetFootballEquipment","SportEquipment")'">Footbal EQ</button>
+<button onclick="location.href='@Url.Action("GetNbaEquipment","SportEquipment")'">NBA EQ</button>
+<button onclick="location.href='@Url.Action("GetSortedEquipment","SportEquipment")'">Sorted By Price</button>
+
+</div>
+
+<h1>All Equipment:</h1>
+
+<div class="cardContainer">
+
+    @foreach (var equipment in Model)
+    {
+        <div class="cards">
+            <img src="@equipment.Picture" class="clothImage" />
+            <h4><b>@equipment.ProductName</b></h4>
+            <p>@equipment.Company</p>
+            <p>@equipment.Price$</p>
+        </div>
+    }
+</div>
+

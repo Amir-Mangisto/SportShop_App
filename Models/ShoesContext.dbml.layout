@@ -27,5 +27,18 @@
         <classShapeMoniker Id="8cedc236-102f-4213-be33-57beb0f25570" />
       </nodes>
     </associationConnector>
+    <classShape Id="7f733850-255b-4a96-8060-765c8ebb7be1" absoluteBounds="6.5, 4.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/ShoesContextDataContext/SportEQ" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e28c7744-95e5-4ee2-a9d7-113c29183222" absoluteBounds="6.515, 5.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 2.56899251302083); (6.75 : 4.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShoesContextDataContext/Team/Team_SportEQ" />
+      <nodes>
+        <classShapeMoniker Id="353920b9-3403-4755-aaec-a8f9755a8d81" />
+        <classShapeMoniker Id="7f733850-255b-4a96-8060-765c8ebb7be1" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

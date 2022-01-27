@@ -1,0 +1,35 @@
+﻿
+<link href="@Url.Content("~/Content/Clothing.css")" rel="stylesheet" type="text/css" />
+
+
+<h1>EQUIPMENT TABLE:</h1>
+<table>
+    <tr>
+
+        <th>ID</th>
+        <th>SportType</th>
+        <th>ProductName</th>
+        <th>Company</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>TeamId</th>
+        <th>Picture</th>
+    </tr>
+    @foreach (var equipment in Model)
+    {
+        <tr>
+            <td>@equipment.Id</td>
+            <td>@equipment.SportType</td>
+            <td>@equipment.ProductName</td>
+            <td>@equipment.Company</td>
+            <td>@equipment.Price</td>
+            <td>@equipment.Quantity</td>
+            <td>@equipment.TeamId</td>
+            <td><img src="@equipment.Picture" style="width:100px; height:100px;" /></td>
+
+        </tr>
+    }
+
+</table>
+
+

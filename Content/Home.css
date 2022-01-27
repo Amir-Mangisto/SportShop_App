@@ -1,0 +1,29 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+body {
+}
+
+.bjImage {
+    width:100%;
+    height:80vh;
+}
+
+.aboutShopSection h1, h2 {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.aboutDeveloperSection h1, h2 {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.aboutLocation h1,p{
+    font-family: 'Bowlby One SC', cursive;
+    text-align:center;
+}
+

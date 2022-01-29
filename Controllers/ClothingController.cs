@@ -18,7 +18,7 @@ namespace SportShop_App.Controllers
         }
         public ActionResult GetLongShirts()
         {
-            List<Clothing> longShirts = ClothingContextDataContext.Clothings.Where(clothing => clothing.IsShort == false).ToList();
+            List<Clothing> longShirts = ClothingContextDataContext.Clothings.Where(clothing => clothing.TypeOfCloths == "jacket").ToList();
             return View(longShirts);
         }
         public ActionResult GetShortShirts()
@@ -33,7 +33,7 @@ namespace SportShop_App.Controllers
         }
         public ActionResult GetClothingTable()
         {
-            List<Clothing> ClothingTable = ClothingContextDataContext.Clothings.ToList();
+            List<Clothing> ClothingTable = ClothingContextDataContext.Clothings.Where(clothing => clothing.TypeOfCloths == "shirt" || clothing.TypeOfCloths == "jacket").ToList();
             return View(ClothingTable);
         }
         public ActionResult OrderByPrice()

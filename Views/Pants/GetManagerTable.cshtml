@@ -3,7 +3,7 @@
 
 
 
-<h1>CLOTHING TABLE:</h1>
+<h1>PANTS TABLE:</h1>
 <table>
     <tr>
 
@@ -23,22 +23,20 @@
     </tr>
     @foreach (var clothing in Model)
     {
-        <tr>
-            <td>@clothing.Id</td>
-            <td>@clothing.TypeOfCloths</td>
-            <td>@clothing.Gender</td>
-            <td>@clothing.Company</td>
-            <td>@clothing.Brand</td>
-            <td>@clothing.Price</td>
-            <td>@clothing.Quantity</td>
-            <td>@clothing.IsShort</td>
-            <td>@clothing.IsDryfit</td>
-            <td>@clothing.Picture</td>
-            <td>@clothing.TeamId</td>
+<tr>
+    <td>@clothing.Id</td>
+    <td>@clothing.TypeOfCloths</td>
+    <td>@clothing.Gender</td>
+    <td>@clothing.Company</td>
+    <td>@clothing.Brand</td>
+    <td>@clothing.Price</td>
+    <td>@clothing.Quantity</td>
+    <td>@clothing.IsShort</td>
+    <td>@clothing.IsDryfit</td>
+    <td><img src="@clothing.Picture" style="width:100px; height:100px;" /> </td>
+    <td>@clothing.TeamId</td>
 
-
-
-        </tr>
+</tr>
     }
 
 </table>

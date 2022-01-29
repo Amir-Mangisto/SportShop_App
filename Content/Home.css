@@ -1,15 +1,31 @@
-﻿*{
-    margin:0;
-    padding:0;
+﻿* {
+    margin: 0;
+    padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
 body {
+}
+li {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 100%;
+}
+.logos {
+    /*    background-color: silver;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logos img{
+
+    height: 100px;
+    width: 100px;
 }
 
 .bjImage {
-    width:100%;
-    height:80vh;
+    width: 100%;
+    height: 80vh;
 }
 
 .aboutShopSection h1, h2 {
@@ -22,8 +38,41 @@ body {
     font-family: 'Bowlby One SC', cursive;
 }
 
-.aboutLocation h1,p{
+.aboutLocation h1, p {
     font-family: 'Bowlby One SC', cursive;
-    text-align:center;
+    text-align: center;
 }
 
+.theHr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 60vw;
+}
+
+.socialMedia {
+    margin-left: 450px;
+    justify-content: space-between;
+}
+/*.IngiLogo {
+    height: 200px;
+    width: 200px;
+    margin-right:48.2vw;
+    padding:4px;
+}
+.TechLogo {
+    width: 00px;
+    height: 200px;
+    margin-left: 10px;
+    padding: 4px;
+}*/
+.divFooter {
+    background-color: black;
+    height: 100px;
+    padding: 10px;
+}
+
+.divFooter img {
+        margin-top: 20px;
+    }

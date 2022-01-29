@@ -8,6 +8,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 body {
 }
+li {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 100%;
+}
+
 h1 {
     text-align: center;
     font-family: 'Bowlby One SC', cursive;

@@ -8,6 +8,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 
+.logos {
+/*    background-color: silver;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .logos img {
+        height: 50px;
+        width: 50px;
+    }
 li {
     font-family: 'Bowlby One SC', cursive;
     font-size: 100%;

@@ -6,8 +6,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
 body {
 }
+
+.logos {
+    /*        background-color: silver;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .logos img {
+        height: 50px;
+        width: 50px;
+    }
+
 li {
     font-family: 'Bowlby One SC', cursive;
     font-size: 100%;
@@ -17,6 +31,7 @@ h1 {
     text-align: center;
     font-family: 'Bowlby One SC', cursive;
 }
+
 table {
     background-color: silver;
     margin-top: 5vh;
@@ -42,7 +57,7 @@ th {
 tr {
     text-align: center;
     height: 5vh;
-    border-radius: 5px ;
+    border-radius: 5px;
     padding: 50px;
 }
 

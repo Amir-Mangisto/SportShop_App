@@ -12,15 +12,15 @@ li {
     font-size: 100%;
 }
 .logos {
-    /*    background-color: silver;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-.logos img{
 
-    height: 100px;
-    width: 100px;
+}
+
+.logos img {
+    height: 50px;
+    width: 50px;
 }
 
 .bjImage {
